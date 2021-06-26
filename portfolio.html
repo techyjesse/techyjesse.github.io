@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <!--HEAD-->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width" />
+        <title>Jesse Kuykendall</title>
+        <link rel="stylesheet" type="text/css" href="portfolio.css">
+    </head>
+
+
+
+    <!--BODY-->
+    <body class="Background">
+
+        <!--NAVBAR-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Contact</a>
+        </div>
+
+
+        <!--Breaks inserted to space navbar and heading-->
+        <br>
+        <br>
+
+
+        <!--BACKGROUND VIDEO-->
+        <div id="Home">
+            <video autoplay muted loop id="Intro_Video">
+                <source src="img/nature.mp4" type="video/mp4">
+                 <!--Display message if video fails to run-->
+            Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!--VIDEO TEXT-->
+        <div class="Video_Text">
+            <h1 class="white-text">Jesse Kuykendall's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>Imagination does not become great until human beings, given the courage and the strength, use it to create.</q>
+                    <br> - Maria Montessori
+                    <br>
+                    <br> My name is Jesse Kuykendall, thank you for visiting my potfolio! 
+                    <br> On it, I'll be sharing my programming background and experience with you, I hope you enjoy!
+                    <br>
+                </p>
+            </strong>
+        </div>
+
+
+        <!--ABOUT SECTION-->
+        <div class="Row" id="About">
+            <!--Left Column-->
+            <div class="Column_2">
+                <img src="img/about-1.jpg" alt="About Me">     
+            </div>
+            <!--Right Column-->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    I'm a software developer with an emphasis on front-end development and design.
+                    <br>
+                    <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="blank">The Tech Academy</a>'s Software Developer Boot Camp and am trained and experienced in the following programming languages: HTML, CSS, JAVASCRIPT, SQL, C#, and much more.
+                    <br>
+                    <br>I am a full-stack developer and would love the opportunity to work with you on your projects. Please see my <a href="#Contact">contact</a> detailes below! 
+                </p>
+            </div>
+        </div>
+
+            <!--GITHUB SECTION-->
+            <div class="Row" id="GitHub">
+                <!--Left Column-->
+                <div class="Column_1">
+                    <h1>GitHub</h1>
+                    <p>
+                       <br> You can view a collection of my coding projects on my GitHub profile here:
+                        <br>
+                        <br><p class="center"><a href="https://github.com/techyjesse" target="_blank">techyjesse GitHub</a></p>
+                    </p>
+                </div>
+                <!--Right Column-->
+                <div class="Column_2">
+                    <a href="https://github.com/techyjesse" target="_blank"><img src="./img/github.png" alt="Github Logo"></a>
+                </div>
+            </div>
+
+
+
+            <!--CONTACT SECTION-->
+            <div class="Row" id="Contact">
+                <!--image in left column-->
+                <div class="Column_2 Column_tall">
+                    <img src="img/contact.jpg" alt="Contact_Image">
+                </div>
+                <!--contact form right column-->
+                <div class="Column_1 Column_tall">
+                    <h1>Contact</h1>
+                    <!--specifies where and how to send the form data; we are leaving it blank-->
+                    <form action="https://formspree.io/f/mdoydobk" method="POST">
+                        <label>Name:</label>
+                            <input type="text" placeholder="Please enter your name here">
+                        <label>Email:</label>
+                            <input type="text" id="Email" name="Email" placeholder="Please enter your email address here">
+                        <label>Message:</label>
+                            <input type="text" id="Message" name="Message" placeholder="Please write your message here.">
+                            <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+
+            <!--FOOTER-->
+            <footer>
+                <p>
+                    <p class="center">&copy Jesse Kuykendall<a href="https://github.com/techyjesse"></a></p>
+                </p>
+            </footer>
+    </body>
+</html>

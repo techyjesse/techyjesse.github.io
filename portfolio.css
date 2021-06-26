@@ -1,0 +1,225 @@
+body {
+    margin: 0%;
+}
+
+h1{
+    text-transform: uppercase;
+    font-family: cursive"Palatino Linotype", "Book Antiqua", Palatino, serif, Optima;
+    text-align: center;
+    margin-top: 3%;
+    color: #1a1a1a
+}
+
+h1:hover {
+    filter:grayscale(15%);
+    transform:scale(1.3);
+    transition: transform 1s;
+}
+
+.white-text {
+    color: #fff;
+}
+
+p {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    text-align: justify;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+p:hover {
+    color: blue;
+    transition: transform 1.25s;
+    transform: scale(1.1);
+}
+
+.center {
+    text-align: center;
+}
+
+.center:hover {
+    color: darkgrey;
+    transition: transform 2s;
+    transform: scale(1.1)
+}
+
+a {
+    color:rgb(31, 127, 165);
+}
+
+q {
+    font-style: italic;
+}
+
+img {
+    filter:grayscale(75%);
+    border-radius: 8px;
+    max-width: 100%;
+    height:340px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img:hover {
+    filter:grayscale(5%);
+    transition: transform 1.25s;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width:576px) {
+    img {
+        height: 100px;
+        margin-top: 150px;
+    }
+}
+
+footer{
+    padding: 2%;
+    background-color:#f4f4f4;
+}
+
+.Navbar {
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    -webkit-animation: moveNav 5s;
+    animation: moveNav 5s;
+}
+
+@keyframes moveNav {
+    from {left: -100vw;}
+    to{left: 0vw;}
+}
+
+.Navbar a {
+    float:left;
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Avant Garde, Helvetica;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    -webkit-animation: moveNavText 2.75s;
+    animation: moveNavText 2.75s;
+}
+
+@keyframes moveNavText {
+    from{top: -100vw;}
+    to{top: 0vw;}
+}
+
+@media screen and (max-width: 576px) {
+    .Navbar a {
+        width:25%;
+        font-size: 12px;
+    }
+}
+
+.Navbar a:hover {
+    background-color: #f4f4f4;
+    color: black;
+    font-weight: bold;
+}
+
+.Navbar a.active {
+    background-color: darkgray;
+}
+
+#Intro_Video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    z-index: -1;
+}
+
+@media screen and (max-width: 576px) {
+    #Intro_Video {
+        display: none;
+    }
+}
+
+.Video_Text {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    width:100%;
+    padding: 20px;
+    position: relative; 
+    -webkit-animation: moveVideoText 3.5s;
+    animation: moveVideoText 3.5s;
+}
+
+@keyframes moveVideoText {
+    from {top: -100vw;}
+    to{top: 0vw;}
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.Column_1 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 3%;
+    height: 400px;
+    background-color: #f2f2f2;
+}
+
+@media screen and (max-width: 576px) {
+    .Column_1 {
+        overflow: auto;
+    }
+}
+
+.Column_2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 1.9%;
+    height: 400px;
+    background-color: #4d4d4d;
+}
+
+.Column_Tall {
+    padding-top: 3.5%;
+    height: 450px;
+}
+
+.Row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input[type=text]:hover {
+    box-shadow: 0 0 5px #00004d inset;
+}
+
+form { 
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    font-family: cursive, Optima;
+}
