@@ -53,7 +53,14 @@ body {
     background-color: grey;
     }
     
-
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    border: solid #fff;
+    border-radius: 5px;
+    border: solid 1px #fff;
+    margin-top: 25px;
+}
 
 
 a {
