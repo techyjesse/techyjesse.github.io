@@ -126,6 +126,10 @@ h2, h3, h4, h5 {
     z-index: 2;
 }
 
+.content h1, h2 {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #f3f7f6, 0 0 70px #f3f7f6, 0 0 80px #f3f7f6, 0 0 100px #f3f7f6, 0 0 150px #f3f7f6;
+}
+
 .content h5 {
     padding-top: 30px;
 }
