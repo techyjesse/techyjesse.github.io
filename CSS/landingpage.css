@@ -220,11 +220,35 @@ h2, h3, h4, h5 {
       color:lightgrey;
   }
 
+.map-container {
+    position: relative;
+    padding-bottom: 26.25%;
+    padding-top: 10px;
+    height: 175px;
+    overflow: hidden;
+    border: 1px solid black;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.map-container iframe,
+.map-container object,
+.map-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 /* Socials Section */
 #contact {
     padding: 40px;
     padding-top: 80px;
     text-align: center;
+}
+
+#contact-form {
+    margin-top: 10px;
 }
 
 #contact p {
