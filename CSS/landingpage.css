@@ -230,6 +230,12 @@ h2, h3, h4, h5 {
       background-color: lightgray;
   }
 
+  .portfolio-modal .modal-dialog {
+    margin: 1rem;
+    max-width: 100vw;
+    max-height: 100vh;;
+  }
+
   .portfolio-modal .close-modal {
     position: absolute;
     top: 1.5rem;
