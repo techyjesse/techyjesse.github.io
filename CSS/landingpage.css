@@ -234,8 +234,8 @@ h2, h3, h4, h5 {
     position: absolute;
     top: 1.5rem;
     right: 1.5rem;
-    width: 3rem;
-    height: 3rem;
+    width: 45px;
+    height: 45px;
     cursor: pointer;
     background-color: transparent;
   }
