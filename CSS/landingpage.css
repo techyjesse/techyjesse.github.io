@@ -21,6 +21,13 @@ body {
 .navbar {
     opacity: 0.4;
     line-height: 1;
+    -webkit-animation: moveNav 2s; /* Safari 4.0 - 8.0 */
+    animation: moveNav 2s; /* This makes the moveNav animation last 5 seconds */
+}
+
+@keyframes moveNav {
+    from {left: -100vw;} /* The navbar is starting off screen to the left */
+    to { left: 0vw;} /* This moves the navbar into place on the screen */
 }
 
 .navbar-collapse {
@@ -49,7 +56,7 @@ body {
 }
 
 .navbar .navbar-toggler[aria-expanded="true"] {
-    color: lightgray!important;
+    color: white!important;
     background-color: grey;
     }
     
@@ -158,6 +165,12 @@ h2, h3, h4, h5 {
     text-align: center;
 }
 
+#about img:hover {
+    filter: grayscale(3%);
+    transition: transform 1s;
+    transform: scale(1.35);
+}
+
 #about p {
     color: #6c757d;
     font-size: 1.2rem;
@@ -168,6 +181,10 @@ h2, h3, h4, h5 {
 
 #about h1 {
     margin: 30px 0;
+}
+
+#about a {
+    text-decoration: underline;
 }
 
 
@@ -188,10 +205,16 @@ h2, h3, h4, h5 {
     display: flex;
 }
 
-#languages .row::after {
-    content: "";
-    clear: both;
-    display: table;
+
+
+#languages {
+    -webkit-animation: moveRow 2s;
+    animation: moveRow 2s;
+}
+
+@keyframes moveRow {
+    from {right: -100vw;} 
+    to { right: 0vw;} 
 }
 
 .portfolio-caption-heading {
@@ -261,6 +284,13 @@ h2, h3, h4, h5 {
     margin-bottom: 2rem;
   }
 
+  .portfolio-modal .modal-content img:hover {
+      cursor: pointer;
+      opacity: 0.8;
+      transition: transform 1s;
+      transform: scale(1.1);
+  }
+
   .text-uppercase {
       text-align: center;
   }
@@ -296,10 +326,6 @@ h2, h3, h4, h5 {
     text-align: center;
 }
 
-#contact-form {
-    margin-top: 10px;
-}
-
 #contact p {
     margin-top: 20px;
 }
@@ -313,6 +339,7 @@ h2, h3, h4, h5 {
     margin: 0 5px;
     padding-top: 80px;
 }
+
 
 .img-fluid {
     border: 1px solid black;
