@@ -222,6 +222,48 @@ h2, h3, h4, h5 {
       color:lightgrey;
   }
 
+  #portfolio .portfolio-item .portfolio-link:hover .portfolio-hover {
+    opacity: 1;
+  }
+
+  .portfolio-modal .container {
+      background-color: lightgray;
+  }
+
+  .portfolio-modal .close-modal {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  .portfolio-modal .close-modal:hover {
+    opacity: 0.3;
+  }
+
+  .portfolio-modal .modal-content p {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .portfolio-modal .modal-content ul.list-inline {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .portfolio-modal .modal-content img {
+    margin-bottom: 2rem;
+  }
+
+  .text-uppercase {
+      text-align: center;
+  }
+
+  .portfolio-modal .modal-content .btn {
+      float: center;
+      align-items: center;
+  }
+
 .map-container {
     position: relative;
     padding-bottom: 26.25%;
