@@ -36,18 +36,25 @@ body {
 
 .navbar-brand {
     color: white;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #f3f7f6, 0 0 70px #f3f7f6, 0 0 80px #f3f7f6, 0 0 100px #f3f7f6, 0 0 150px #f3f7f6;
 }
 
+
 .navbar-brand:hover {
-    color: grey;
+    color: whitesmoke;
+    transition: transform .25s;
+    transform: scale(1.2);
 }
 
 .navbar .nav-link {
     color: white;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #f3f7f6, 0 0 70px #f3f7f6, 0 0 80px #f3f7f6, 0 0 100px #f3f7f6, 0 0 150px #f3f7f6;
 }
 
 .navbar .nav-link:hover {
-    color: grey;
+    color: whitesmoke;
+    transition: transform .25s;
+    transform: scale(1.2);
 }
 
 .navbar .navbar-toggler {
@@ -165,9 +172,8 @@ h2, h3, h4, h5 {
     text-align: center;
 }
 
-#about img:hover {
-    filter: grayscale(3%);
-    transition: transform 1s;
+#about .rounded-circle:hover {
+    transition: transform .5s;
     transform: scale(1.35);
 }
 
@@ -193,7 +199,14 @@ h2, h3, h4, h5 {
     box-sizing: border-box;
     margin-top: 20px;
     margin-bottom: 20px;
+    -webkit-animation: moveRow 2s;
+    animation: moveRow 2s;
 }    
+
+@keyframes moveRow {
+    from {right: -100vw;} 
+    to { right: 0vw;} 
+}
 
 #languages .column {
     float: left;
@@ -205,16 +218,9 @@ h2, h3, h4, h5 {
     display: flex;
 }
 
-
-
-#languages {
-    -webkit-animation: moveRow 2s;
-    animation: moveRow 2s;
-}
-
-@keyframes moveRow {
-    from {right: -100vw;} 
-    to { right: 0vw;} 
+#languages img:hover {
+    transition: transform .25s;
+    transform: scale(1.2);
 }
 
 .portfolio-caption-heading {
@@ -247,6 +253,11 @@ h2, h3, h4, h5 {
 
   #portfolio .portfolio-item .portfolio-link:hover .portfolio-hover {
     opacity: 1;
+  }
+
+  #portfolio .img-fluid:hover {
+    transition: transform .25s;
+    transform: scale(1.15);
   }
 
   .portfolio-modal .container {
@@ -287,7 +298,7 @@ h2, h3, h4, h5 {
   .portfolio-modal .modal-content img:hover {
       cursor: pointer;
       opacity: 0.8;
-      transition: transform 1s;
+      transition: transform .5s;
       transform: scale(1.1);
   }
 
