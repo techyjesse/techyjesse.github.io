@@ -42,8 +42,6 @@ body {
 
 .navbar-brand:hover {
     color: whitesmoke;
-    transition: transform .25s;
-    transform: scale(1.2);
 }
 
 .navbar .nav-link {
@@ -53,8 +51,6 @@ body {
 
 .navbar .nav-link:hover {
     color: whitesmoke;
-    transition: transform .25s;
-    transform: scale(1.2);
 }
 
 .navbar .navbar-toggler {
