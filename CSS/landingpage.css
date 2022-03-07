@@ -109,16 +109,15 @@ h2, h3, h4, h5 {
     overflow: hidden;
     background: var(--primary-color)
     url("/img/Pexels\ Videos\ 1851190.mp4") no-repeat center center/cover;
+    background-position: center;
+    background-size: cover;
 }
 
 .video-container video {
-    min-width: 100%;
-    min-height: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    object-fit: wrap;
 }
 
 .video-container:after {
