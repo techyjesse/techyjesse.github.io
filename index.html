@@ -16,13 +16,17 @@
         <!--Google Fonts API-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <script src="index.js"></script>
         <title>Jesse Kuykendall</title>
+
+        
+
     </head>
 
     <body>
         <section class="showcase" id="home">
             <div class="video-container">
-                <video src="img/Pexels Videos 1851190.mp4" autoplay muted loop></video>
+                <video src="img/rotation.mp4" autoplay muted loop></video>
             </div>
 
             
@@ -70,12 +74,12 @@
             <h1>About Me</h1>
                 <div class="row">
                     <div class="column">
-                        <img class="rounded-circle" alt="100x100" src="img/1.JPG"
-          data-holder-rendered="true">
+                        <img id="aboutImage" class="img-fluid rounded-circle" alt="100x100" src="img/1.JPG"
+                        data-holder-rendered="true">
                     </div>
                     <hr style="width:50%; margin-left:25% !important; margin-top:30px; margin-right:25% !important;" />
-                    <div class="column">
-                        <p>I began teaching myself to code in 2019 and quickly fell in love with the process of bringing an application to life. In 2021, I joined a full-stack software developer program at <a href="https://www.learncodinganywhere.com" target="blank">The Tech Academy</a> in Portland, Oregon. This bootcamp consisted of over 600 hours of immersive instruction and hands-on coding experience. I learned HTML, CSS, JavaScript, SQL, Python, C# and completed two live projects utilizing the Django and .NET frameworks in a two-week sprint team setting. In my free time I enjoy training and coaching Muay Thai, reading, and exploring the beautiful Pacific Northwest. I'd love the opportunity to work with you on your projects! Please see my work and contact details below.
+                    <div class="column md-6">
+                        <p id="aboutP">I began teaching myself to code in 2019 and quickly fell in love with the process of bringing an application to life. In 2021, I joined a full-stack software developer program at <a href="https://www.learncodinganywhere.com" target="blank">The Tech Academy</a> in Portland, Oregon. This bootcamp consisted of over 600 hours of immersive instruction and hands-on coding experience. I learned HTML, CSS, JavaScript, SQL, Python, C# and completed two live projects utilizing the Django and .NET frameworks in a two-week sprint team setting. In my free time I enjoy training and coaching Muay Thai, reading, and exploring the beautiful Pacific Northwest. I'd love the opportunity to work with you on your projects! Please see my work and contact details below.
                         </p>
                     </div>
                 </div>
@@ -507,6 +511,15 @@
             </div>
         </div>
 
+        <script>
+            window.onscroll = myFunction();
+
+            function myFunction() {
+                if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
+                document.getElementById("myImg").className = "slideUp";
+                }
+            }
+        </script>
 
     </body>
 </html>

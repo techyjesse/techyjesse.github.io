@@ -108,7 +108,7 @@ h2, h3, h4, h5 {
     height: 100%;
     overflow: hidden;
     background: var(--primary-color)
-    url("/img/Pexels\ Videos\ 1851190.mp4") no-repeat center center/span;
+    url("/img/rotation.mp4") no-repeat center center/span;
     background-position: center;
     background-size: cover;
 }
@@ -160,6 +160,9 @@ h2, h3, h4, h5 {
 }
 
 /* About Section */
+
+
+
 #about {
     background-color: lightgrey;
     padding: 40px;
