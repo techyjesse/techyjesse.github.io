@@ -108,8 +108,8 @@ h2, h3, h4, h5 {
     height: 100%;
     overflow: hidden;
     background: var(--primary-color)
-    url("/img/rotation.mp4") no-repeat center center/span;
-    background-position: center;
+    url("/img/Pexels Videos 1851190.mp4") no-repeat center center;
+    background-position: absolute;
     background-size: cover;
 }
 
@@ -133,6 +133,43 @@ h2, h3, h4, h5 {
 
 .content {
     z-index: 2;
+}
+
+#movingtxt1 {
+    position: relative;
+    -webkit-animation: moving1 3s;
+    animation: moving1 3s;
+}
+
+@-webkit-keyframes moving1 {
+    from {top: -100vw;}
+    to {top: 0vw;}
+}
+
+@keyframes moving1 {
+    from {top: -100vw;} /* The content is starting off screen to the left */
+    to { top: 0vw;} /* This moves the content into place on the screen */
+}
+
+#movingtxt2 {
+    position: relative;
+    -webkit-animation: moving2 3s;
+    animation: moving2 3s;
+}
+
+@-webkit-keyframes moving2 {
+    from {right: -100vw;}
+    to {right: 0vw;}
+}
+
+@keyframes moving2 {
+    from {right: -100vw;} /* The content is starting off screen to the left */
+    to {right: 0vw;} /* This moves the content into place on the screen */
+}
+
+.content h1 {
+    margin-top: 85px;
+    animation: moving 2s;
 }
 
 .content h1, h2 {
@@ -160,9 +197,6 @@ h2, h3, h4, h5 {
 }
 
 /* About Section */
-
-
-
 #about {
     background-color: lightgrey;
     padding: 40px;
@@ -173,6 +207,11 @@ h2, h3, h4, h5 {
 #about .rounded-circle:hover {
     transition: transform .5s;
     transform: scale(1.35);
+}
+
+.vl {
+    border-left: 2px solid black;
+    height: 250px;
 }
 
 #about p {
@@ -191,7 +230,7 @@ h2, h3, h4, h5 {
     text-decoration: underline;
 }
 
-
+/*Languages Section*/
 
 #languages #flex-container1 {
     content: hidden;
@@ -200,12 +239,6 @@ h2, h3, h4, h5 {
     margin-bottom: 20px;
     -webkit-animation: moveRow 2s;
     animation: moveRow 2s;
-}    
-#languages #flex-container2 {
-    content: hidden;
-    box-sizing: border-box;
-    margin-top: 0;
-    margin-bottom: 20px;
 }
 
 @keyframes moveRow {
