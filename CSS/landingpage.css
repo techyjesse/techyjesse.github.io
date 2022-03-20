@@ -18,6 +18,7 @@ body {
     line-height: 1.5;
 }
 
+/*Navbar styles*/
 .navbar {
     opacity: 0.4;
     line-height: 1;
@@ -168,7 +169,7 @@ h2, h3, h4, h5 {
 }
 
 .content h1 {
-    margin-top: 85px;
+    margin-top: 45px;
     animation: moving 2s;
 }
 
@@ -204,19 +205,19 @@ h2, h3, h4, h5 {
     text-align: center;
 }
 
-#about .rounded-circle {
-    height: 275px;
+#aboutImage {
+    height: 350px;
     width: 275px;
 }
 
-#about .rounded-circle:hover {
+#aboutImage:hover {
     transition: transform .5s;
     transform: scale(1.20);
 }
 
 #about p {
-    color: #6c757d;
-    font-size: 1.2rem;
+    color: black;
+    font-size: 1.3rem;
     max-width: 850px;
     margin: auto;
     margin-top: 15px;
