@@ -183,7 +183,7 @@ h2, h3, h4, h5 {
 /* About Section */
 #about {
     background-color: white;
-    padding: 40px;
+    padding: 10px;
     padding-top: 40px;
     text-align: center;
 }
@@ -232,14 +232,6 @@ h2, h3, h4, h5 {
     content: hidden;
     box-sizing: border-box;
     margin-top: 20px;
-    margin-bottom: 20px;
-    -webkit-animation: moveRow 2s;
-    animation: moveRow 2s;
-}
-
-@keyframes moveRow {
-    from {right: -100vw;} 
-    to { right: 0vw;} 
 }
 
 #languages .column {
